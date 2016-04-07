@@ -1,5 +1,5 @@
 {
-  "name": "nrun",
+  "name": "ndeploy",
   "version": "0.1.0-alpha",
   "main": "index.js",
   "scripts": {
@@ -9,11 +9,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JonDotsoy/nrun.git"
+    "url": "git+https://github.com/JonDotsoy/ndeploy.git"
   },
   "bugs": {
-    "url": "https://github.com/JonDotsoy/nrun/issues"
+    "url": "https://github.com/JonDotsoy/ndeploy/issues"
   },
-  "homepage": "https://github.com/JonDotsoy/nrun#readme",
+  "homepage": "https://github.com/JonDotsoy/ndeploy#readme",
   "description": ""
 }
