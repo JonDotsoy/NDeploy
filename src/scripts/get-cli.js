@@ -3,6 +3,12 @@ import path from 'path'
 
 let binFolder = path.normalize(__dirname + '/../bin')
 
+let scriptCliFile = ''
++ '#!/usr/bin/env node' + '\n'
++ '' + '\n'
++ 'require(\'../lib/cli\')' + '\n'
++ '' + '\n'
+
 Promise.resolve(new Promise((resolve, reject) => {
 	fs
 		.mkdir(
@@ -19,7 +25,7 @@ Promise.resolve(new Promise((resolve, reject) => {
 	fs
 		.writeFile(
 			path.normalize(folder + '/cli.js'),
-			``,
+			scriptCliFile,
 			{
 				'encoding': 'utf8',
 				'mode': 0o766,
