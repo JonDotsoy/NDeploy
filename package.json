@@ -9,7 +9,7 @@
     "_build": "node_modules/.bin/babel --out-dir . src/",
     "_build-whatch": "node_modules/.bin/babel -w --out-dir . src/"
   },
-  "author": "",
+  "author": "Jon Dotsoy <hi@jon.soy> (http://jon.soy)",
   "license": "MIT",
   "repository": {
     "type": "git",
