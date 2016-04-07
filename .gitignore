@@ -40,3 +40,4 @@ jspm_packages
 # build files by project
 scripts/
 bin/
+lib/

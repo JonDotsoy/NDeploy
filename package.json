@@ -1,13 +1,14 @@
 {
   "name": "ndeploy",
+  "title": "NDeploy",
   "version": "0.1.0-alpha",
   "main": "index.js",
   "scripts": {
     "prepublish": "npm run-script _build && npm run-script _gen-cli",
     "test": "echo \"Error: no test specified\" && exit 1",
     "_gen-cli": "node scripts/get-cli.js",
-    "_build": "node_modules/.bin/babel --out-dir . src/",
-    "_build-whatch": "node_modules/.bin/babel -w --out-dir . src/"
+    "_build": "babel --out-dir . src/",
+    "_build-whatch": "babel -w --out-dir . src/"
   },
   "bin": {
     "ndeploy": "bin/cli.js"
@@ -22,15 +23,21 @@
     "url": "https://github.com/JonDotsoy/ndeploy/issues"
   },
   "homepage": "https://github.com/JonDotsoy/ndeploy#readme",
-  "description": "",
+  "description": "A tool for deploying an application.",
   "devDependencies": {
     "babel": "^6.5.2",
-    "babel-cli": "^6.6.5"
+    "babel-cli": "^6.6.5",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-2": "^6.5.0"
   },
   "babel": {
     "presets": [
-      "es2015"
+      "es2015",
+      "stage-2"
     ],
     "sourceMaps": "inline"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
   }
 }
