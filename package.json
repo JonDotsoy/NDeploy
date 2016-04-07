@@ -3,7 +3,7 @@
   "version": "0.1.0-alpha",
   "main": "index.js",
   "scripts": {
-    "prepublish": "npm run-script _build && npm run-script _get-cli",
+    "prepublish": "npm run-script _build && npm run-script _gen-cli",
     "test": "echo \"Error: no test specified\" && exit 1",
     "_gen-cli": "node scripts/get-cli.js",
     "_build": "node_modules/.bin/babel --out-dir . src/",
