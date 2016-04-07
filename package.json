@@ -3,7 +3,11 @@
   "version": "0.1.0-alpha",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm run-script _build && npm run-script _get-cli",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "_gen-cli": "node scripts/get-cli.js",
+    "_build": "node_modules/.bin/babel --out-dir . src/",
+    "_build-whatch": "node_modules/.bin/babel -w --out-dir . src/"
   },
   "author": "",
   "license": "MIT",
@@ -15,5 +19,15 @@
     "url": "https://github.com/JonDotsoy/ndeploy/issues"
   },
   "homepage": "https://github.com/JonDotsoy/ndeploy#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.6.5"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "sourceMaps": "inline"
+  }
 }
