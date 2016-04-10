@@ -1,5 +1,6 @@
 
-export let help = function ( {version, name, title, gitHead}, verbose) {
+export let help = function ( {version, name, title, gitHead}, verbose, opts) {
+	let {shellInterative} = opts
 
 	let template =
 `
@@ -14,9 +15,7 @@ Options:
 
 Actions:
 `
-
 	console.log(template)
-
 }
 
 export let getVersionStr = function (short, {version, gitHead, title} , verbose) {
@@ -27,7 +26,7 @@ export let getVersionStr = function (short, {version, gitHead, title} , verbose)
 	}
 }
 
-export let version = function ( pkg, verbose ) {
+export let version = function ( pkg, verbose, opts ) {
 	console.log(getVersionStr(false, pkg, verbose))
 }
 
