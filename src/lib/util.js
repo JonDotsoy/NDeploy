@@ -8,7 +8,8 @@ export let help = function (pkg, verbose, opts) {
 			'--help, -h': 'Show this messsage.',
 		},
 		arguments: {
-			'ab': 'abbbb',
+			'up': 'Prepares and raises the application.',
+			'install': 'Displays a message such as installing bash NDeploy.',
 		}
 	}))
 }
