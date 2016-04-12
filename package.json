@@ -38,6 +38,7 @@
     "sourceMaps": "inline"
   },
   "dependencies": {
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "utilapp": "^1.0.1"
   }
 }
